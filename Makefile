@@ -7,7 +7,7 @@ all: $(PNG)
 	typst compile $?
 	
 %.png: %.pdf
-	convert -density 300 -geometry 1404\!x1872 $? $@
+	convert -density 300 -geometry 1404\!x1872 $? templates/$@
 
 clean:
-	rm -f *.pdf *.png
+	rm -f *.pdf
