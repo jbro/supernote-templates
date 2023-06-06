@@ -32,7 +32,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: templates
-        path: *.png
+        path: "*.png"
 
     - name: Release
       uses: softprops/action-gh-release@v1
