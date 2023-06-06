@@ -13,6 +13,8 @@ You need the following to build:
 
 To build all templates run:
 
-    $ make
+```console
+$ make
+```
 
 This will output PNG files which are ready to be uploaded to your devices `MyStyle` folder.
