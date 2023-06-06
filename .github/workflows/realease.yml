@@ -28,7 +28,7 @@ jobs:
         extension: "\\.tar.xz"
 
     - name: debug env
-      run: echo $PATH
+      run: ls -l /opt/hostedtoolcache/typst/typst/v0.4.0/linux-x64
 
     - name: Build
       run: make
