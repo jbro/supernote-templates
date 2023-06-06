@@ -27,5 +27,8 @@ jobs:
         cache: enable
         extension: "\\.tar.xz"
 
+    - name: debug env
+      run: echo $PATH
+
     - name: Build
       run: make
