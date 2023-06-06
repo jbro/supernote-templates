@@ -26,7 +26,7 @@ jobs:
     - name: Install fonts
       run: |
         wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/ProFont.zip
-        unzip -d ~/.fontconfig ProFont.zip
+        unzip -d ~/.fonts ProFont.zip
         fc-cache -fv
 
     - name: Build
