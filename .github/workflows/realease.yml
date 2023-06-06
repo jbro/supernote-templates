@@ -20,14 +20,13 @@ jobs:
         packages: make imagemagick
 
     - name: Install typst
-      uses: jaxxstorm/action-install-gh-release@v1.10.0
+      uses: baptiste0928/cargo-install@feat/git-install
       with:
-        repo: typst/typst
+        crate: typst
+        git: https://github.com/typst/typst
         tag: v0.4.0
-        extension: "\\.tar.xz"
 
-    - name: debug env
-      run: ls -l /opt/hostedtoolcache/typst/typst/v0.4.0/linux-x64
+
 
     - name: Build
       run: make
