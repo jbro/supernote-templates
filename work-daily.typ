@@ -14,8 +14,7 @@
   let line = (mark: [󰋙], line: [#line(start: (0em, 1em), length: 100%)])
   [
     #grid(columns: (1em, 1fr),
-          ..while count > 1 {
-            count = count -1
+          ..for _ in range(1, count) {
             (line.mark, line.line, v(1em), "")
           },
           [#line.mark], [#line.line],
@@ -75,9 +74,7 @@
   [
     #set text(size: 10pt)
     #v(0.5em)
-    #let n = 0
-    #while n < 10 {
-      n = n + 1
+    #for _ in range(10) {
       line(start: (0em, 1em), stroke: (paint: black, dash: "dotted"), length: 100%)
     }
     #v(1pt)
