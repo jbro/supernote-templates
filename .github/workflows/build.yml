@@ -1,0 +1,45 @@
+name: Release
+
+on:
+  push
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install dependencies
+      uses: awalsh128/cache-apt-pkgs-action@v1.3.0
+      with:
+        packages: wget xz-utils make imagemagick ghostscript unzip fontconfig
+
+    - name: Install typst
+      run: |
+        wget https://github.com/typst/typst/releases/download/v0.4.0/typst-x86_64-unknown-linux-musl.tar.xz
+        tar xvf typst-x86_64-unknown-linux-musl.tar.xz
+        echo typst-x86_64-unknown-linux-musl >> $GITHUB_PATH
+
+    - name: Install fonts
+      run: |
+        wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/ProFont.zip
+        unzip -d ~/.fonts ProFont.zip
+        fc-cache -fv
+
+    - name: Fix ImageMagic security policy
+      run: sudo rm /etc/ImageMagick-6/policy.xml
+
+    - name: Build
+      env:
+        TYPST_FONT_PATHS: /home/runner/.fonts
+      run: |
+        typst fonts
+        make
+
+    - name: Upload built templates to artifact store
+      uses: actions/upload-artifact@v3
+      with:
+        name: templates
+        path: "*.png"
