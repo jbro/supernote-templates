@@ -15,6 +15,7 @@ You need the following to build:
 - Make (eg. [GNU make](https://www.gnu.org/software/make/))
 - convert from [ImageMagick](https://imagemagick.org/index.php)
 - [typst](https://github.com/typst/typst)
+- [ProFont Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/ProFont.zip)
 
 ### Build
 
