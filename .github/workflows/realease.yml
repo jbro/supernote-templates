@@ -17,14 +17,13 @@ jobs:
     - name: Install dependencies
       uses: awalsh128/cache-apt-pkgs-action@v1.3.0
       with:
-        packages: make imagemagick
+        packages: wget xz-utils make imagemagick
 
     - name: Install typst
-      uses: baptiste0928/cargo-install@feat/git-install
-      with:
-        crate: typst
-        git: https://github.com/typst/typst
-        tag: v0.4.0
+      run: |
+        wget https://github.com/typst/typst/releases/download/v0.4.0/typst-x86_64-unknown-linux-musl.tar.xz
+        tar xvf typst-x86_64-unknown-linux-musl.tar.xz
+        mv typst-x86_64-unknown-linux-musl/typst /usr/bin/
 
     - name: Build
       run: make
