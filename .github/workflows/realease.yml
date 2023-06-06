@@ -18,11 +18,12 @@ jobs:
       uses: awalsh128/cache-apt-pkgs-action@v1.3.0
       with:
         packages: make imagemagick
+
     - name: Install typst
-      uses: baptiste0928/cargo-install@v2
+      uses: jaxxstorm/action-install-gh-release@v1.10.0
       with:
-        crate: typst
-        version: "^v0.4.0"
+        repo: typst/typst
+        tag: v0.4.0
 
     - name: Build
       run: make
