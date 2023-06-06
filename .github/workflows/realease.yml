@@ -14,15 +14,15 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Install typst
-      uses: baptiste0928/cargo-install@v2
-      with:
-        crate: typst
-    
     - name: Install dependencies
       uses: awalsh128/cache-apt-pkgs-action@v1.3.0
       with:
         packages: make imagemagick
+    - name: Install typst
+      uses: baptiste0928/cargo-install@v2
+      with:
+        crate: typst
+        version: v0.4.0
 
     - name: Build
       run: make
