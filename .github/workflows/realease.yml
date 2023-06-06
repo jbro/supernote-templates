@@ -34,7 +34,7 @@ jobs:
 
     - name: Build
       env:
-        TYPST_FONT_PATHS: /home/runner/.fonts"
+        TYPST_FONT_PATHS: /home/runner/.fonts
       run: |
         typst fonts
         make
