@@ -38,8 +38,8 @@
           [
             #set text(size: 24pt)
             #set align(center+horizon)
-            #sym.circle.stroked.big
-            #h(9pt)
+            
+            #h(16pt)
           ],
           [
             #set text(size: 8pt)
