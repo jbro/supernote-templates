@@ -2,9 +2,8 @@ name: Release
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    tags:
+      - "v*.*.*"
 
 jobs:
   build:
@@ -29,3 +28,11 @@ jobs:
       run: |
         sudo rm /etc/ImageMagick-6/policy.xml #disable pesky security check
         make
+
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          "*.png"
+          README.md
+          LICENSE
