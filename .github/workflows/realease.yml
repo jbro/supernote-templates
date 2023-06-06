@@ -24,6 +24,8 @@ jobs:
       with:
         repo: typst/typst
         tag: v0.4.0
+        cache: enable
+        extension: "\\.tar.xz"
 
     - name: Build
       run: make
