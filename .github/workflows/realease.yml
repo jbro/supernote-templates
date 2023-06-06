@@ -26,4 +26,6 @@ jobs:
         echo typst-x86_64-unknown-linux-musl >> $GITHUB_PATH
 
     - name: Build
-      run: make
+      run: |
+        rm /etc/ImageMagick-6/policy.xml #disable pesky security check
+        make
