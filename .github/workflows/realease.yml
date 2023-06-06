@@ -29,12 +29,14 @@ jobs:
         unzip -d ~/.fonts ProFont.zip
         fc-cache -fv
 
+    - name: Fix ImageMagic security policy
+      run: sudo rm /etc/ImageMagick-6/policy.xml
+
     - name: Build
       env:
         TYPST_FONT_PATHS: "~/.fonts"
       run: |
         typst fonts
-        sudo rm /etc/ImageMagick-6/policy.xml #disable pesky security check
         make
 
     - name: Upload built templates to artifact store
