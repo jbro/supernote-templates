@@ -27,5 +27,5 @@ jobs:
 
     - name: Build
       run: |
-        rm /etc/ImageMagick-6/policy.xml #disable pesky security check
+        sudo rm /etc/ImageMagick-6/policy.xml #disable pesky security check
         make
