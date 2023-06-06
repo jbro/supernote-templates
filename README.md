@@ -4,7 +4,7 @@ My templates for the [Ratta Supernote A5 X](https://supernote.com/products/super
 
 ## Work daily
 
-![work-daily](templates/work-daily.png)
+![work-daily](https://github.com/jbro/supernote-templates/releases/latest/download/work-daily.png)
 
 ## Building
 
