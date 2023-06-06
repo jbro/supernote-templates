@@ -20,7 +20,7 @@ jobs:
         crate: typst
     
     - name: Install dependencies
-      uses: awalsh128/cache-apt-pkgs-action@v1.3
+      uses: awalsh128/cache-apt-pkgs-action@v1.3.0
       with:
         packages: make imagemagick
 
