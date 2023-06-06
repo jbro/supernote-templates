@@ -22,7 +22,7 @@ jobs:
       uses: baptiste0928/cargo-install@v2
       with:
         crate: typst
-        version: v0.4.0
+        version: "^v0.4.0"
 
     - name: Build
       run: make
