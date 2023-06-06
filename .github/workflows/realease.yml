@@ -23,7 +23,7 @@ jobs:
       run: |
         wget https://github.com/typst/typst/releases/download/v0.4.0/typst-x86_64-unknown-linux-musl.tar.xz
         tar xvf typst-x86_64-unknown-linux-musl.tar.xz
-        mv typst-x86_64-unknown-linux-musl/typst /usr/bin/
+        export PATH=$PATH:typst-x86_64-unknown-linux-musl/typst
 
     - name: Build
       run: make
