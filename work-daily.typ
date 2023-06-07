@@ -65,7 +65,7 @@
       [],
       [
         #set align(center)
-        󰙼 󱗩 󱅝 #h(2em) 󰎏
+        󰙼   #h(0.5em) 󱅝 #h(1em)󰎏
       ],
       "Hydrate:", align(right,"󰸊 󰸊 󰸊 󰸊 󰸊 󰸊"),
     )
