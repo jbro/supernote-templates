@@ -44,7 +44,6 @@ jobs:
         name: templates
         path: |
           *.png
-          README.md
 
   release:
     if: startsWith(github.ref, 'refs/tags/')
@@ -56,14 +55,9 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: templates
-          
-    - name: Update previews in README for release
-      run: |
-        sed -i -e "s%supernote-templates/releases/latest/download/%supernote-templates/releases/download/$GITHUB_REF_NAME/%" README.md
 
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
         files: |
           *.png
-          README.md
