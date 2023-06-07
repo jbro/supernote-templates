@@ -72,6 +72,7 @@
   [
     #v(0.5em)
     #task-lines(8)
+    #v(1pt)
   ]
 )
 
@@ -80,7 +81,7 @@
     #set text(size: 10pt)
     #v(0.5em)
     #for _ in range(10) {
-      line(start: (0em, 1em), stroke: (paint: black, dash: "dotted"), length: 100%)
+      line(start: (0em, 1em), stroke: (paint: black, dash: "dotted"), length: 99%)
     }
     #v(1pt)
   ]
