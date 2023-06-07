@@ -55,13 +55,17 @@
 #titled-box(title: "Tracker",
   [
     #grid(columns: (1fr, 6fr, 1fr, 6fr), row-gutter: 4pt, column-gutter: 5em,
-      "Exercise:", align(right, "     "),
+      "Exercise:",
+      [
+          #set align(right)
+               
+          #place(dx: 8.5pt, dy: -6.6pt, text(size: 4pt, number-width: "tabular", kerning: false, spacing: 0pt, tracking: 13.4pt, "555555"))
+      ],
       "Coffee:", align(right, "󰛊 󰛊 󰛊 󰛊 󰛊 󰛊"),
       [],
       [
         #set align(center)
-       󰙼 󱗩 󱅝 #h(2em) 󰎏
-        
+        󰙼 󱗩 󱅝 #h(2em) 󰎏
       ],
       "Hydrate:", align(right,"󰸊 󰸊 󰸊 󰸊 󰸊 󰸊"),
     )
