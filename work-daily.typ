@@ -57,7 +57,12 @@
     #grid(columns: (1fr, 6fr, 1fr, 6fr), row-gutter: 4pt, column-gutter: 5em,
       "Exercise:", align(right, "     "),
       "Coffee:", align(right, "󰛊 󰛊 󰛊 󰛊 󰛊 󰛊"),
-      [], [#set text(size: 6pt); #h(15pt) (5 min per heart)],
+      [],
+      [
+        #set align(center)
+       󰙼 󱗩 󱅝 #h(2em) 󰎏
+        
+      ],
       "Hydrate:", align(right,"󰸊 󰸊 󰸊 󰸊 󰸊 󰸊"),
     )
   ]
