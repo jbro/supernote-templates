@@ -15,7 +15,7 @@
   [
     #grid(columns: (1em, 1fr),
           ..for _ in range(1, count) {
-            (line.mark, line.line, v(1em), "")
+            (rotate(30deg, line.mark), line.line, v(1em), "")
           },
           [#line.mark], [#line.line],
     )
