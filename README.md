@@ -11,6 +11,16 @@ Latest release of templates are inlined here:
         <img src="https://github.com/jbro/supernote-templates/releases/latest/download/work-daily.png">
 </details>
 
+<details>
+    <summary>General notes</summary>
+        <img src="https://github.com/jbro/supernote-templates/releases/latest/download/work-notes.png">
+</details>
+
+<details>
+    <summary>One on one notes</summary>
+        <img src="https://github.com/jbro/supernote-templates/releases/latest/download/work-one-on-one.png">
+</details>
+
 These can all be downloaded directly and placed in your device's `MyStyle` folder.
 
 ## Building
