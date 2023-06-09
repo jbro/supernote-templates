@@ -3,5 +3,13 @@
 
 #import "include/elements.typ": titled-box, note-lines
 
-#v(12pt)
-#titled-box(title: text(size: 20pt, [#v(-5pt); Notes]), note-lines(24))
+#grid(columns: (1fr, 220pt),
+  [
+    #set text(size: 20pt)
+    #h(5pt)
+    Notes
+  ],
+  titled-box(title: "", text(size: 24pt, v(1em))),
+)
+
+#titled-box(title: "", note-lines(21))
