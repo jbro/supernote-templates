@@ -55,11 +55,11 @@
 #titled-box(title: "Tasks",
   [
     #v(0.5em)
-    #task-lines(8)
+    #task-lines(12)
     #v(1pt)
   ]
 )
 
 #titled-box(title: "Notes",
-  note-lines(10)
+  note-lines(5)
 )
