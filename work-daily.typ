@@ -1,27 +1,7 @@
 #import "include/a5x-template.typ": template
 #show: doc => template(doc)
 
-#let titled-box(contents, title: "title", text-size: 12pt,) = box(stroke: 2pt + gray, inset: 6pt, radius: 5pt, width: 100%,
-  [
-    #v(2pt)
-    #text(size: text-size, [#place(top+left, [#v(-1em) #box(fill: white, inset: 1pt, title)])])
-    #v(2pt)
-    #contents
-  ]
-)
-
-#let task-lines(count) = {
-  let line = (mark: [󰋙], line: [#line(start: (0em, 1em), length: 100%)])
-  [
-    #grid(columns: (1em, 1fr),
-          ..for _ in range(1, count) {
-            (rotate(30deg, line.mark), line.line, v(1em), "")
-          },
-          [#line.mark], [#line.line],
-    )
-    #v(1pt)
-  ]
-}
+#import "include/elements.typ": titled-box, task-lines, note-lines
 
 #grid(columns: (1fr, 108pt),
   [
@@ -81,12 +61,5 @@
 )
 
 #titled-box(title: "Notes",
-  [
-    #set text(size: 10pt)
-    #v(0.5em)
-    #for _ in range(10) {
-      line(start: (0em, 1em), stroke: (paint: black, dash: "dotted"), length: 99%)
-    }
-    #v(1pt)
-  ]
+  note-lines(10)
 )
