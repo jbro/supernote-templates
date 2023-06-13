@@ -31,6 +31,9 @@ jobs:
     - name: Fix ImageMagic security policy
       run: sudo rm /etc/ImageMagick-6/policy.xml
 
+    - name: Stamp files with release version
+      run: sed -i -e "s/unreleased/$GITHUB_REF_NAME/" include/a5x-template.typ
+
     - name: Build
       env:
         TYPST_FONT_PATHS: /home/runner/.fonts
