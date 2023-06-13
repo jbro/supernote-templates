@@ -32,6 +32,7 @@ jobs:
       run: sudo rm /etc/ImageMagick-6/policy.xml
 
     - name: Stamp files with release version
+      if: startsWith(github.ref, 'refs/tags/')
       run: sed -i -e "s/unreleased/$GITHUB_REF_NAME/" include/a5x-template.typ
 
     - name: Build
@@ -59,8 +60,12 @@ jobs:
       with:
         name: templates
 
+    - name: Create bundle
+      run: zip supernote-templates-bundle-${GITHUB_REF_NAME}.zip -xi *.png
+
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
         files: |
           *.png
+          *.zip

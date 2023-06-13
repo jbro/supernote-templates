@@ -11,4 +11,4 @@ all: $(PNG)
 	convert -alpha off -density 300 -geometry 1404\!x1872 $? $@
 
 clean:
-	rm -f *.pdf *.png
+	rm -f *.pdf *.png *.zip
