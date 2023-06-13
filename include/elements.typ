@@ -9,11 +9,11 @@
 )
 
 #let task-lines(count) = {
-  let line = (mark: text(fill: gray, "󰋙"), line: [#line(start: (0em, 1em), length: 100%)])
+  let line = (mark: rotate(30deg, text(fill: gray, "󰋙")), line: [#line(start: (0em, 1em), length: 100%)])
   [
     #grid(columns: (1em, 1fr),
           ..for _ in range(1, count) {
-            (rotate(30deg, line.mark), line.line, v(1em), "")
+            (line.mark, line.line, v(1em), "")
           },
           [#line.mark], [#line.line],
     )
