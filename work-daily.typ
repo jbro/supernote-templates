@@ -38,17 +38,18 @@
       "Exercise:",
       [
           #set align(right)
-               
+          #text(fill: gray, "     ")
           #place(dx: 4.8pt, dy: -6.6pt, text(size: 4pt, number-width: "tabular", kerning: false, spacing: 0pt, tracking: 13.4pt, "555555"))
       ],
-      "Coffee:", align(right, [󰛊 󰛊 󰛊 󰛊 󰛊 󰛊 #h(0.3em)]),
+      "Coffee:", align(right, [#text(fill: gray, "󰛊 󰛊 󰛊 󰛊 󰛊 󰛊") #h(0.3em)]),
       [],
       [
         #set align(center)
         󰙼   #h(0.5em) 󱅝 #h(0.7em)󰎏
       ],
-      "Hydrate:", align(right, [󰸊 󰸊 󰸊 󰸊 󰸊 󰸊 #h(0.3em)]),
+      "Hydrate:", align(right, [#text(fill: gray, "󰸊 󰸊 󰸊 󰸊 󰸊 󰸊") #h(0.3em)]),
     )
+    #v(2pt)
   ]
 )
 

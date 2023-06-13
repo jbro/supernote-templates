@@ -9,7 +9,7 @@
 )
 
 #let task-lines(count) = {
-  let line = (mark: [󰋙], line: [#line(start: (0em, 1em), length: 100%)])
+  let line = (mark: text(fill: gray, "󰋙"), line: [#line(start: (0em, 1em), length: 100%)])
   [
     #grid(columns: (1em, 1fr),
           ..for _ in range(1, count) {
