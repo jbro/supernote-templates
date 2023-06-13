@@ -1,7 +1,7 @@
 #import "include/a5x-template.typ": template
 #show: doc => template(doc)
 
-#import "include/elements.typ": titled-box, task-lines, note-lines
+#import "include/elements.typ": titled-box, task-lines, note-lines, week-box
 
 #grid(columns: (1fr, 108pt),
   [
@@ -9,27 +9,7 @@
     #h(5pt)
     Daily
   ],
-  [
-    #titled-box(title: "Week",
-      [
-        #set align(right)
-        #grid(columns: 2,
-          [
-            #set text(size: 24pt)
-            #set align(center+horizon)
-            
-            #h(16pt)
-          ],
-          [
-            #set text(size: 8pt)
-            #set align(left)
-            mon tue wed\
-            thu fri
-          ],
-        )
-      ]
-    )
-  ]
+  week-box()
 )
 
 #titled-box(title: "Tracker",

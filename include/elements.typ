@@ -31,3 +31,24 @@
     #v(1pt)
   ]
 )
+
+#let week-box() = titled-box(title: "Week",
+  [
+    #set align(right)
+    #v(-2pt)
+    #grid(columns: 2,
+      [
+        #set text(size: 24pt, fill: gray)
+        #set align(center+horizon)
+        
+        #h(16pt)
+      ],
+      [
+        #set text(size: 8pt)
+        #set align(left)
+        mon tue wed\
+        thu fri
+      ],
+    )
+  ]
+)
