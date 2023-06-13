@@ -3,14 +3,14 @@
 
 #import "include/elements.typ": titled-box, note-lines, week-box
 
-#grid(columns: (1fr, 170pt, 108pt), column-gutter: 5pt,
+#grid(columns: (1fr, 170pt, 136pt), column-gutter: 5pt,
   [
     #set text(size: 20pt)
     #h(5pt)
     1 on 1
   ],
   [
-    #titled-box(title: "Name", v(18.8pt))
+    #titled-box(title: "Name", v(16.8pt))
   ],
   week-box()
 )

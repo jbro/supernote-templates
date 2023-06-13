@@ -3,7 +3,7 @@
 
 #import "include/elements.typ": titled-box, task-lines, note-lines, week-box
 
-#grid(columns: (1fr, 108pt),
+#grid(columns: (1fr, 136pt),
   [
     #set text(size: 20pt)
     #h(5pt)
