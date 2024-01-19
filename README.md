@@ -7,6 +7,11 @@ My templates for the [Ratta Supernote A5 X](https://supernote.com/products/super
 Latest release of templates are inlined here:
 
 <details>
+    <summary>Title page for notebooks</summary>
+        <img src="https://github.com/jbro/supernote-templates/releases/latest/download/title-page.png">
+</details>
+
+<details>
     <summary>Daily task list, tracker and notes</summary>
         <img src="https://github.com/jbro/supernote-templates/releases/latest/download/work-daily.png">
 </details>
@@ -31,6 +36,7 @@ You need the following to build:
 - convert from [ImageMagick](https://imagemagick.org/index.php)
 - [typst](https://github.com/typst/typst)
 - [ProFont Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/ProFont.zip)
+- [Routed Gothic Font](https://webonastick.com/fonts/routed-gothic/download/routed-gothic-ttf.zip)
 
 
 To build all templates run:
