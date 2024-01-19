@@ -26,6 +26,8 @@ jobs:
       run: |
         wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/ProFont.zip
         unzip -d ~/.fonts ProFont.zip
+        wget https://webonastick.com/fonts/routed-gothic/download/routed-gothic-ttf.zip
+        unzip -d ~/.fonts ProFont.zip routed-gothic-ttf.zip
         fc-cache -fv
 
     - name: Fix ImageMagic security policy
