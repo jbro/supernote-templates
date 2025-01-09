@@ -8,7 +8,6 @@ all: $(PNG)
 	typst compile $<
 
 %.png: %.pdf
-	which magick || (echo "ImageMagick is not installed"; exit 1)
 	magick $< -alpha off -density 300 -geometry 1404\!x1872 $@
 
 clean:
