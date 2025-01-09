@@ -13,8 +13,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          apt-get update
-          apt-get install -y wget xz-utils make imagemagick ghostscript unzip fontconfig
+          sudo apt-get update
+          sudo apt-get install -y wget xz-utils make imagemagick ghostscript unzip fontconfig
 
       - name: Install typst
         run: |
