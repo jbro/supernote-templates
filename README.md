@@ -17,6 +17,11 @@ Latest release of templates are inlined here:
 </details>
 
 <details>
+    <summary>Daily tracker and notes</summary>
+        <img src="https://github.com/jbro/supernote-templates/releases/latest/download/work-daily-notes.png">
+</details>
+
+<details>
     <summary>General notes</summary>
         <img src="https://github.com/jbro/supernote-templates/releases/latest/download/work-notes.png">
 </details>
