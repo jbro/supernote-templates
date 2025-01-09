@@ -8,6 +8,7 @@ all: $(PNG)
 	typst compile $<
 	
 %.png: %.pdf
+	ls *.pdf
 	convert -alpha off -density 300 -geometry 1404\!x1872 $? $@
 
 clean:
