@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Install dependencies
-        uses: awalsh128/cache-apt-pkgs-action@v1.3.0
+        uses: awalsh128/cache-apt-pkgs-action@v1.4.2
         with:
           packages: wget xz-utils make imagemagick ghostscript unzip fontconfig
 
@@ -29,9 +29,6 @@ jobs:
           wget https://webonastick.com/fonts/routed-gothic/download/routed-gothic-ttf.zip
           unzip -d ~/.fonts routed-gothic-ttf.zip
           fc-cache -fv
-
-      - name: Fix ImageMagic security policy
-        run: sudo rm /etc/ImageMagick-6/policy.xml
 
       - name: Stamp files with release version
         if: startsWith(github.ref, 'refs/tags/')
