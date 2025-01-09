@@ -15,7 +15,7 @@ all: $(PNG)
 	typst compile $<
 
 %.png: %.pdf
-	$(CMD) $< -alpha off -density 300 -geometry 1404\!x1872 $@
+	$(CMD) -density 300 $< -alpha off -geometry 1404\!x1872 $@
 
 clean:
 	rm -f *.pdf *.png *.zip
