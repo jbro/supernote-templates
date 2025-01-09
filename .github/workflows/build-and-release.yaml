@@ -39,7 +39,7 @@ jobs:
           TYPST_FONT_PATHS: /home/runner/.fonts
         run: |
           typst fonts
-          which imagemagick
+          alias magick=imagemagick
           make
 
       - name: Upload built templates to artifact store
