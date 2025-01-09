@@ -3,7 +3,7 @@ DEP = $(wildcard include/*.typ)
 PNG = $(patsubst %.typ, %.png, $(SRC))
 
 ifeq ($(shell uname), Linux)
-	CMD = imagemagick
+	CMD = convert
 else
 	CMD = magick
 endif
