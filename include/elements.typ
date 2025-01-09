@@ -8,6 +8,12 @@
   ]
 )
 
+#let non-titled-box(contents, text-size: 12pt,) = box(stroke: 2pt + gray, inset: 6pt, radius: 5pt, width: 100%,
+  [
+    #contents
+  ]
+)
+
 #let task-lines(count) = {
   let line = (mark: rotate(30deg, text(fill: gray, "󰋙")), line: [#line(start: (0em, 1em), length: 100%)])
   [

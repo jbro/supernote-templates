@@ -34,5 +34,5 @@
 )
 
 #titled-box(title: "Notes",
-  note-lines(20)
+  note-lines(19)
 )

@@ -1,7 +1,7 @@
 #import "include/a5x-template.typ": template
 #show: doc => template(doc)
 
-#import "include/elements.typ": titled-box, note-lines
+#import "include/elements.typ": non-titled-box, note-lines
 
 #grid(columns: (1fr, 220pt),
   [
@@ -9,7 +9,7 @@
     #h(5pt)
     Notes
   ],
-  titled-box(title: "", text(size: 24pt, v(1em))),
+  non-titled-box(text(size: 24pt, v(1em))),
 )
 
-#titled-box(title: "", note-lines(21))
+#non-titled-box(note-lines(21))
