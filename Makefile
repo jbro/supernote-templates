@@ -8,7 +8,7 @@ all: $(PNG)
 	typst compile $<
 	
 %.png: %.pdf
-	magick convert -alpha off -density 300 -geometry 1404\!x1872 $? $@
+	convert -alpha off -density 300 -geometry 1404\!x1872 $? $@
 
 clean:
 	rm -f *.pdf *.png *.zip
