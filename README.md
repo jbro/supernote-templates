@@ -27,6 +27,11 @@ Latest release of templates are inlined here:
 </details>
 
 <details>
+    <summary>Freeform note</summary>
+        <img src="https://github.com/jbro/supernote-templates/releases/latest/download/work-notes-dotted.png">
+</details>
+
+<details>
     <summary>One on one notes</summary>
         <img src="https://github.com/jbro/supernote-templates/releases/latest/download/work-one-on-one.png">
 </details>
@@ -43,11 +48,10 @@ You need the following to build:
 - [ProFont Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/ProFont.zip)
 - [Routed Gothic Font](https://webonastick.com/fonts/routed-gothic/download/routed-gothic-ttf.zip)
 
-
 To build all templates run:
 
 ```console
-$ make
+make
 ```
 
 This will output PNG files which are ready to be uploaded to your device's `MyStyle` folder.
